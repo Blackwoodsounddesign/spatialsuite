@@ -11,4 +11,4 @@ SpatialSuite - a max project with all of the algorithms setup for use in quad (p
 2DAmbisonic - A fairly simple implementation of a basic 2D ambisonic mic array. 
 
 # Thank You 
-To Tom Erbe, Bobby McElver, and the Norman Design Fund for invaluable assistance while creating these projects. 
+To Tom Erbe, Bobby McElver, and the Norman Design Fund for invaluable assistance while creating this suite. 
