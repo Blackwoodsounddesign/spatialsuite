@@ -8,7 +8,7 @@ Raw Javascript - contains DBAP, VBAP & VBIP algorithms implemented in Javascript
 <br>
 SpatialSuite - a max project with all of the algorithms setup for use in quad
 <br>
-2DAmbisonic - A fairly simple implementation of a basic 2D ambisonic mic array. 
+2DAmbisonic - An implementation of a 2D ambisonic mic array. 
 
 # Thank You 
 To Tom Erbe, Bobby McElver, and the Norman Design Fund for invaluable assistance while creating this suite. 
