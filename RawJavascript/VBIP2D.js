@@ -2,19 +2,22 @@
 Written by Stewart Blackwood 
 www.stewartblackwood.com
 
-this is an 2D implementation of Ville Pulkki's Vector Based Amplitude Panning algorithm (VBAP).
-The original paper can be found here: https://www.aes.org/e-lib/browse.cfm?elib=7853
+Special thanks to Eli Blackwood (BS, Applied Mathematics) for staring at the
+horrible VBIP notation with me at a campsite in upstate New York. 
+
+this is an 2D implementation of Vector Based Intensity Panning algorithm (VBIP).
+The equations can be found here Springer Topics in Signal Processing (pg.43 - 44)
 
 ====== STEPS FOR USE ======
-Step 1) Add the azimuth value for each speaker after the VBAP.js 
+Step 1) Add the azimuth value for each speaker after the VBIP.js 
 (the number of outlets are based on the number of azimuths you include)
 
-Step 2) connect the outlets of VBAP.js to inlets on various *~ objects 
+Step 2) connect the outlets of VBIP.js to inlets on various *~ objects 
 
 Step 3) add your source to the other inlets of the *~ objects 
 
-Step 4) connect a float based control scheme to the inlet of the VBAP object. 
-VBAP.js will assume the control signal is in degrees and pan around your space based on the values you provide.
+Step 4) connect a float based control scheme to the inlet of the VBIP object. 
+VBIP.js will assume the control signal is in degrees and pan around your space based on the values you provide.
 
 Step 5) Enjoy! 
 
@@ -26,6 +29,7 @@ var SpeakerDegrees = [];
 var PossibleValues = [];
 var SpeakerValues = [];
 var SourcePlacement; 
+var Normalize = 1;
 
 //Set up our outlets
 if (jsarguments.length > 0)
@@ -159,6 +163,16 @@ function UpdateGainCoeff()
 	//speaker gain weights
 	g1 = p1*det*y2 - p2*det*x2;
 	g2 = p2*det*x1 - p1*det*y1;
+	
+	//normalize
+	if(Normalize == 1)
+	{
+		g1temp = Math.sqrt(g1) / Math.sqrt(g1 + g2);
+		g2temp = Math.sqrt(g2) / Math.sqrt(g1 + g2);
+	
+		g1 = g1temp;
+		g2 = g2temp;
+	}
 	
 	//these are just in case anything crazy happens
 	if(g1 < 0)

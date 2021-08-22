@@ -25,8 +25,8 @@ Make sure to add some smoothing to the values of VBAP.js
 var SpeakerDegrees = []; 
 var PossibleValues = [];
 var SpeakerValues = [];
-var SourcePlacement; 
-var Normalize = 1;
+var SourcePlacement;
+var Normalize = 1; 
 
 //Set up our outlets
 if (jsarguments.length > 0)
@@ -161,18 +161,6 @@ function UpdateGainCoeff()
 	g1 = p1*det*y2 - p2*det*x2;
 	g2 = p2*det*x1 - p1*det*y1;
 	
-	post(g1+ " " + g2);
-	/*	
-	//normalize
-	if(Normalize == 1)
-	{
-		g1temp = g1 / Math.sqrt(g1 * g1 + g2 * g2);
-		g2temp = g2 / Math.sqrt(g1 * g1 + g2 * g2);
-	
-		g1 = g1temp;
-		g2 = g2temp;
-	}
-	*/
 	//these are just in case anything crazy happens
 	if(g1 < 0)
 	g1=0
@@ -185,6 +173,16 @@ function UpdateGainCoeff()
 	
 	if(g2 > 1)
 	g2=1 
+	
+	
+	if(Normalize == 1)
+		{
+		g1temp = g1 / Math.sqrt(g1 * g1 + g2 * g2);
+		g2temp = g2 / Math.sqrt(g1 * g1 + g2 * g2);
+	
+		g1 = g1temp;
+		g2 = g2temp;
+		}
 	
 	//finds the outlet connected to the speakers we are panning between
 	output1 = SpeakerDegrees.indexOf(SpeakerValues[0]);
