@@ -6,7 +6,7 @@ A suite of object based spatial tools & algorithms implemented in C++ (with the 
 # Included
 Create Trajectories - XYZ plugin that sends OSC over a desired port. 
 <br>
-Raw Javascript - contains DBAP, VBAP & VBIP algorithms implemented in Javascript. 
+Raw Javascript - contains Knn, DBAP, VBAP & VBIP algorithms implemented in Javascript. 
 <br>
 SpatialSuite - a max project with all of the algorithms setup for use in quad.
 <br>
