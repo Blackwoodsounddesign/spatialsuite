@@ -1,8 +1,8 @@
 {
-	"name" : "SpatialSuite08_22",
+	"name" : "SpatialSuite10_18",
 	"version" : 1,
-	"creationdate" : 3712455693,
-	"modificationdate" : 3712455693,
+	"creationdate" : 3717432474,
+	"modificationdate" : 3717432474,
 	"viewrect" : [ 0.0, 0.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -10,7 +10,7 @@
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"SpatialSuite08_22.maxpat" : 			{
+			"SpatialSuite10_18.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
