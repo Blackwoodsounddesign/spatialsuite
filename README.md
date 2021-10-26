@@ -10,10 +10,10 @@ Raw Javascript - contains Knn, DBAP, VBAP & VBIP algorithms implemented in Javas
 <br>
 SpatialSuite - a max project with all of the algorithms setup for use in quad.
 <br>
-2DAmbisonic - An implementation of a 2D ambisonic mic array. 
+2DAmbisonic - An implementation of a 2D ambisonic mic array encoder/decorder. 
 
 # Thank You 
-To Tom Erbe, Bobby McElver, and the Norman Design Fund for invaluable assistance while researching and creating this.
+To Tom Erbe, Bobby McElver, and the Norman Design Fund for assistance while researching and creating this.
 <br>
 
 # How To Use The Spatial Algorthims
