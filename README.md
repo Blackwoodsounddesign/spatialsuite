@@ -21,7 +21,7 @@ This is as a repository of open source spatial algorithms and tools. Generally t
 <br> 
 Inside the javascript object there are some usage notes and a link to an academic paper(s) that pertain to that specific algorithm. I truly hope that this empowers you explore the interesting world of spatial sound.   
 <br>
-As a quick note, to understand the papers, there is a some trigonometry, linear alegbra, and a bit calculus knowledge assumed by the authors. A smart starting point would be to create a position based panner, and then go from there.
+As a quick note, to understand the papers, there is a some trigonometry, linear alegbra, and a bit of calculus knowledge assumed by the authors. A smart starting point would be to create a position based panner and then build from there.
 
 # How To Use The Spatial Controller (Entitled "Create Trajecories")
 You can go to this link and read all about it: https://blackwoodsounddesign.gumroad.com/l/xxyvSs 
