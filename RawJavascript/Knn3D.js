@@ -130,7 +130,7 @@ function CalculateSpeakerGains()
 		X1 = SpeakersXY[i];
 		Y1 = SpeakersXY[i+1];
 		Z1 = SpeakersXY[i+2];
-		d = Math.sqrt((X1 - Xs) * (X1 - Xs) + (Y1 - Ys) * (Y1 - Ys) + (Z1 - Zs) * (Z1 - Zs) + blurryness * blurryness);
+		d = (X1 - Xs) * (X1 - Xs) + (Y1 - Ys) * (Y1 - Ys) + (Z1 - Zs) * (Z1 - Zs) + blurryness * blurryness;
 		Distances.push(d);
 		sortableDistances.push(d);
 	}

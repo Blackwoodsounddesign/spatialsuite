@@ -108,7 +108,7 @@ function CalculateSpeakerGains()
 	{
 		X1 = SpeakersXY[i];
 		Y1 = SpeakersXY[i+1];
-		d = Math.sqrt((X1 - Xs) * (X1 - Xs) + (Y1 - Ys) * (Y1 - Ys) + blurryness * blurryness);
+		d = (X1 - Xs) * (X1 - Xs) + (Y1 - Ys) * (Y1 - Ys) + blurryness * blurryness;
 		Distances.push(d);
 	}
 	
