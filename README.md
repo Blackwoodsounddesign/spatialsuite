@@ -1,4 +1,4 @@
-# Stewart's Spatial Audio Suite
+# Theatrical Spatial Audio Suite
 www.stewartblackwood.com
 <br>
 A suite of object based spatial tools & algorithms implemented in C++ (with the JUCE SDK), Javascript, and Max/MSP. 
